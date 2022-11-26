@@ -1,10 +1,12 @@
 <% chapters.forEach((chapter) => { %>
-  <div class="card mr-4"  style="width: 18rem;">
-      <div class="card-body">
-        <h4 class="card-title"><%= chapter.title %></h4>
-        <p class="card-text">Number of lessons: <%= chapter.nbrOfLesson %></p>
-        <a href="/chapters/delete/<%= chapter._id %>" class="btn btn-danger">Delete</a>
-        <a href="/chapters/<%= chapter._id %>" class="btn btn-primary">Details</a>
-      </div>
+<div class="card me-4" style="width: 18rem">
+  <div class="card-body">
+    <h4 class="card-title"><%= chapter.title %></h4>
+    <p class="card-text">Number of lessons: <%= chapter.nbrOfLesson %></p>
+    <a href="/chapters/delete/<%= chapter._id %>" class="btn btn-danger"
+      >Delete</a
+    >
+    <a href="/chapters/<%= chapter._id %>" class="btn btn-primary">Details</a>
   </div>
+</div>
 <% }) %>
